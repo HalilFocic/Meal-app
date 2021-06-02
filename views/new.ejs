@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+<div id="newForm">
+<form action="/meals" method="POST">
+    <div class="form-group">
+      <label for="meal[name]">Meal Name</label>
+      <input name="meal[name]" type="text" class="form-control" id="mealName" aria-describedby="mealName" placeholder="Enter meal name">
+    </div>
+    
+    <div class="form-group">
+        <label for="meal[image]">Meal Image</label>
+        <input name="meal[image]" type="text" class="form-control" id="mealImage" aria-describedby="mealImage" placeholder="Enter link of your food image.">
+    </div>
+
+    <div class="form-group">
+        <label for="meal[desc]">Meal Description</label>
+        <input name="meal[desc] type="text" class="form-control" id="mealDesc" aria-describedby="mealDesc" placeholder="Enter description of your meal.">
+    </div>
+    <button type="submit" class="btn btn-danger">ADD</button>
+  </form>
+</div>
+<%- include('partials/footer') %>
