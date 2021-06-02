@@ -59,6 +59,7 @@ app.delete("/meals/:id", function (req, res) {
     }
   });
 });
-app.listen(3000, function () {
-  console.log("Server has started!");
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Serving on port ${port}`);
 });
